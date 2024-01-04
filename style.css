@@ -1,0 +1,14 @@
+*root{
+    margin: 0px;
+}
+
+.cabecalho ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho li{
+    display: inline;
+    float: left;
+}
