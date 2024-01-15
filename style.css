@@ -5,3 +5,13 @@
 #navbar{
   background-color: #EAFF82 !important;
 }
+#posnavbar{
+  padding: 0px;
+}
+
+#posnavbar img {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
