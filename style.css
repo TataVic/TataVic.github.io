@@ -20,18 +20,6 @@
   margin: 0;
 }
 
-.overlay-buttons li {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.overlay-buttons a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-}
-
 #button button{
   background-color: #EAFF82 !important;
   font-weight: bold;
@@ -42,3 +30,4 @@
   box-sizing: border-box;
   box-shadow: 0 0 6px #fbb03b;
 }
+
