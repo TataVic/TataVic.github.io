@@ -7,6 +7,13 @@
 #navbar {
   background-color: #fbb03b !important;
 }
+.nav-link {
+  margin-right: 15px; /* Ajuste o valor conforme necessário */
+}
+
+.nav-link:last-child {
+  margin-right: 0; /* Remove a margem do último link, se desejado */
+}
 
 .banner-container {
   position: relative;
@@ -49,5 +56,9 @@
 
 #icones .img{
   width: 10pc;
-  height: 10px;
+  height: 10px;  
+  margin: 15px;
+}
+#icones{
+  margin: 15px;
 }
