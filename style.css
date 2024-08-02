@@ -1,13 +1,21 @@
-*root{
-    margin: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#navbar{
-  background-color: #EAFF82 !important;
+#navbar {
+  background-color: #fbb03b !important;
 }
-#posnavbar{
-  padding: 0px;
+
+.banner-container {
   position: relative;
+  text-align: center;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
 }
 
 .overlay-buttons {
@@ -15,19 +23,31 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
-#button button{
+.background-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#bemvindo {
+  z-index: 1;
   background-color: #EAFF82 !important;
-  font-weight: bold;
-  font-size: 18px;
-  width:300px;
-  height:100px;
-  padding:10px;
-  box-sizing: border-box;
   box-shadow: 0 0 6px #fbb03b;
+  padding: 20px;
+  border-radius: 10px;
 }
 
+#icones .img{
+  width: 10pc;
+  height: 10px;
+}
