@@ -2,8 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
 
+ #Titulo_Tau {
+  font-family: "Abril Fatface", serif;
+  font-size: x-large;
+}
 #navbar {
   background-color: #fbb03b !important;
 }
@@ -48,11 +53,13 @@
 
 #bemvindo {
   z-index: 1;
-  background-color: #EAFF82 !important;
-  box-shadow: 0 0 6px #fbb03b;
+  background-color: #fbb03b !important;
+  box-shadow: 0 0 6px #EAFF82;
   padding: 20px;
   border-radius: 10px;
+  opacity: 0.9;
 }
+
 
 #icones .img{
   width: 10pc;
