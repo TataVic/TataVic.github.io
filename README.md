@@ -3,8 +3,6 @@
 Bem-vindo ao meu portfólio pessoal! 💛  
 Este projeto foi desenvolvido com foco em **design moderno, movimento e tecnologia**, para apresentar meus projetos e trajetória como **Desenvolvedora Full-Stack**.
 
----
-
 ## 🚀 Tecnologias utilizadas
 
 Este portfólio foi construído com as seguintes tecnologias:
