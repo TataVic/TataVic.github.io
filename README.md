@@ -1,5 +1,17 @@
-# Bem Vindo ao meu futuro portfólio!
+# 🌐 Portfólio - Tauani Dev
 
-Página em construção....
+Bem-vindo ao meu portfólio pessoal! 💛  
+Este projeto foi desenvolvido com foco em **design moderno, movimento e tecnologia**, para apresentar meus projetos e trajetória como **Desenvolvedora Full-Stack**.
 
-![cosntruciones](https://github.com/TataVic/TataVic.github.io/assets/120256512/22fe8e33-0c5a-40a9-9cff-83ee897137f6)
+---
+
+## 🚀 Tecnologias utilizadas
+
+Este portfólio foi construído com as seguintes tecnologias:
+- ⚛️ [**React.js**](https://react.dev/) — interface dinâmica e componentizada  
+- ⚡ [**Vite**](https://vitejs.dev/) — ambiente de desenvolvimento rápido e leve  
+- 🎨 [**Tailwind CSS**](https://tailwindcss.com/) — estilização moderna e responsiva  
+- 🌗 **Modo Dark/Light** — alternância automática de tema  
+- 🔗 [**GitHub API**](https://docs.github.com/en/rest) — integração automática para listar meus repositórios  
+- 🚀 Deploy com **GitHub Pages**
+
