@@ -1,70 +1,89 @@
 <!-- https://getbootstrap.com/docs/4.6/getting-started/introduction/ -->
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tauani Dev</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- <link rel="icon" href="assets/logoquad2.png" type="image"> -->
     <link rel="icon" href="assets/techs2.png" type="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
-                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
-                </svg>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a></a>
-                  <a class="nav-link active" aria-current="page" href="#" id="Titulo_Tau" >Tauani Vitória</a>
-                </li>
-              </ul>
-                <a class="nav-link">Início</a>
-                <a class="nav-link">Projetos</a>
-                <a class="nav-link">Sobre mim</a>
-            </div>
-            <div> <!--modo dark e claro -->
-              <input type="checkbox" class="checkbox" id="chk">
-              <label class="label" for="chk">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-                <div class="ball"></div>
-              </label>
-            </div>
-        </div>
-    </nav>
-    <div class="banner-container">
-      <img src="assets/banner.jpg" class="d-block w-100" id="banner">
-      <div class="container overlay-buttons text-center">
+    <nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="assets/planetinha.png" class="planet-icon" id="planetIcon" alt="Planetinha">
+    </a>
+
+    <!-- Botão mobile -->
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+
+    <!-- Conteúdo que colapsa -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" id="Titulo_Tau">Tauani Vitória</a>
+        </li>
+      </ul>
+        <a class="nav-link" href="#">Início</a>
+        <a class="nav-link" href="#">Projetos</a>
+        <a class="nav-link" href="#">Sobre mim</a>
+
+      <!-- Switch Dark -->
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <div class="banner-container" id="bannerContainer">
+      <div class="container  text-center">
           <div class="background-div"></div>
           <div class="col-6 mx-auto" id="bemvindo">
               <h3 id="Titulo_Tau">Seja bem-vindo ao mundo TauVick!</h3>
-              <p>Sou a Tauani Dev, e fico feliz que tenha vindo até aqui!</p>
-              <p>Sou Desenvolvedora Full-Stack</p>
+              <p>Sou a Tauani, e fico feliz que tenha vindo até aqui!</p>
+              <p>Almejo ser Desenvolvedora Back-End</p>
               <div id="icones">
-                <a id="icones" href="https://github.com/TataVic"><img src="assets/github.png" alt="GitHub" style="width: 40px; height: 40px;"></a> 
-                <a id="icones" href="https://www.linkedin.com/in/tauani-degrandi/"><img src="assets/linkedin.png" alt="Linkedin" style="width: 40px; height: 40px;"></a> 
-                <a id="icones"href="mailto:tauani.dev@gmail.com.br"><img src="assets/e-mail.png" alt="Email para Tauani" style="width: 40px; height: 40px;"></a> 
+                <a  href="https://github.com/TataVic"><img src="assets/github.png" alt="GitHub" style="width: 40px; height: 40px;"></a> 
+                <a  href="https://www.linkedin.com/in/tauani-degrandi/"><img src="assets/linkedin.png" alt="Linkedin" style="width: 40px; height: 40px;"></a> 
+                <a href="mailto:tauani.dev@gmail.com.br"><img src="assets/e-mail.png" alt="Email para Tauani" style="width: 40px; height: 40px;"></a> 
               </div>
           </div>
       </div>
   </div>
-
 </body>
+
+<footer class="footer">
+<div class="container text-center">
+
+   <h4 class="footer-title">Tauani Vitória</h4>
+    <p class="footer-subtitle">Desenvolvedora Back-End</p>
+
+    <a class="footer-link">Direitos Reservados</a>
+
+    <p class="copyright">
+      © <span id="Ano"></span> - Desenvolvido com amor by Tata Vic❤️.
+    </p>
+
+  </div>
+
+</footer>
 <script src="script.js"></script>
-<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
