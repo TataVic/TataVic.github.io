@@ -1,7 +1,7 @@
 # 🌐 Portfólio - Tauani Dev
 
 Bem-vindo ao meu portfólio pessoal! 💛  
-Este projeto foi desenvolvido com foco em **design moderno, movimento e tecnologia**, para apresentar meus projetos e trajetória como **Desenvolvedora Full-Stack**.
+Este projeto foi desenvolvido com foco em **design moderno, movimento e tecnologia**, para apresentar meus projetos e trajetória como **Desenvolvedora**.
 
 ## 🚀 Tecnologias utilizadas
 
