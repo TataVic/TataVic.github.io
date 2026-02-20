@@ -92,7 +92,19 @@ body.dark #navbar{
   z-index: -1;
 }
 
+.background-section {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
 
+.section {
+  background-color: var(--cor-principal);
+  box-shadow: 0 0 6px var(--cor-box-shadow);
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
 
 /* =========================
    BOX BEM-VINDO
