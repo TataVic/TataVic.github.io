@@ -84,10 +84,12 @@ body.dark #navbar{
 
 #Titulo_Section {
   font-family: "Abril Fatface", serif;
-  font-size: x-large;
   font-size:xx-large
 }
 
+body.dark #Titulo_Section{
+  color: var(--cor-branco);
+}
 
 /* =========================
    BANNER
@@ -127,6 +129,11 @@ body.dark #navbar{
   opacity: 0.9;
  
 }
+body.dark .section {
+    background-color: var(--cor-principal-dark);
+}
+
+
 /* =========================
    BOX BEM-VINDO
 ========================= */
@@ -205,6 +212,9 @@ body.dark #icones img {
     justify-content: center; /* centraliza horizontal */
     align-items: center;
   }
+  .col_projetos{
+    margin-bottom: 10px;
+  }
 }
 
 .planet-icon{
@@ -220,6 +230,12 @@ body.dark .planet-icon {
     object-fit: cover;   
     width: 100%;
 }
+
+body.dark .card{
+  background-color: #e4e4e4;
+}
+
+
 
 /* =========================
    SWITCH DARK / LIGHT
@@ -299,6 +315,48 @@ body.dark .planet-icon {
   background-color: var(--cor-principal) !important;
   border-color: var(--cor-principal) !important;
   transform: translateY(-2px);
+}
+
+#buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* BOTÃO PRINCIPAL */
+.btn-main {
+  background: var(--roxo-principal);
+  color: white;
+  padding: 10px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.btn-main:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* BOTÃO OUTLINE */
+.btn-outline {
+  background: transparent;
+  color: var(--roxo-principal);
+  padding: 10px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid var(--roxo-principal);
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--roxo-principal);
+  color: white;
+  transform: translateY(-3px);
 }
 
 /* =========================
@@ -383,7 +441,7 @@ body.dark .footer a {
   left: 50%;
 }
 
-/* Card */
+/* Card timeline */
 .timeline-content{
   background: var(--cor-branco);
   padding: 20px;
@@ -458,19 +516,23 @@ body.dark .footer a {
 @media screen and (max-width: 768px) {
 
   .timeline::after {
-    left: 20px;
+    left: 28px;
+    transform: none;
   }
 
   .timeline-item {
     width: 100%;
-    padding-left: 60px;
+    left: 0 !important;
+    padding-left: 80px;
+    padding-right: 20px;
   }
 
-  .timeline-item.right {
-    left: 0;
-  }
-
+  /* RESET TOTAL da bolinha */
   .timeline-item::before {
-    left: 12px;
+    left: 28px !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    top: 30px;
   }
+
 }
