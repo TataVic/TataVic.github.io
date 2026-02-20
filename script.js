@@ -43,3 +43,20 @@ if (savedTheme === "dark") {
 
 const year = document.getElementById("Ano");
 year.textContent = new Date().getFullYear();
+
+
+
+
+  const items = document.querySelectorAll('.timeline-item');
+
+  function showTimeline() {
+    items.forEach(item => {
+      const itemTop = item.getBoundingClientRect().top;
+      if (itemTop < window.innerHeight - 100) {
+        item.classList.add('show');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', showTimeline);
+  showTimeline();

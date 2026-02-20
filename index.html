@@ -52,8 +52,8 @@
   </div>
 </nav>
 
+<!-- Banner de Bem Vindo -->
 <div class="banner-container" id="bannerContainer">
-  <!-- Banner de Bem Vindo -->
   <div class="container  text-center">
       <div class="row">
         <div class="background-div"></div>
@@ -68,59 +68,104 @@
               </div>
           </div>
       </div>
+  </div>
+</div>
 
-      <!-- Banners de seções -->
+  <!-- Banners de seções -->
+    <section class="container my-5 section">
       <div class="row" style="margin: 50px;">
-        <div class="section">
-          <h4>Seção Projetos</h4>
+          <h4 class="text-center mb-5" id="Titulo_Section">Seção Projetos</h4>
             <div class="row">
               <!-- Cards Projetos -->
-              <div class="col">
-                <div class="card " style="width: 18rem;">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card" style="width: 20rem; padding: 10px;">
                   <img src="assets/vanpass.png" class="card-img-top" alt="VanPass">
                   <div class="card-body">
                     <h5 class="card-title">VanPass: Gerenciamento do Transporte Escolar</h5>
                     <p class="card-text">Aplicação Web destinada a gerenciar o transporte escolar para o motorista e responsável, com PHP e Javascript.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="https://github.com/TataVic/VanPass" class="btn btn-primary">Quero Conhecer</a>
                   </div>
                 </div>
               </div>
 
               <!-- Cards Projetos -->
-              <div class="col">
-                <div class="card " style="width: 18rem;">
-                  <img src="" class="card-img-top" alt="TauBiRy">
+              <div class="col-md-4 d-flex justify-content-center">
+                <div class="card " style="width: 20rem; padding: 10px;">
+                  <img src="assets/taubiry.jpeg" class="card-img-top" alt="TauBiRy">
                   <div class="card-body">
                     <h5 class="card-title">TauBiRy: Sistema de Livraria</h5>
-                    <p class="card-text">Prática de CRUD (Cadastrar, Ler, Atualizar e Deletar) de um sistema de livraria, com NetMaui e C#.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">Foi utilizado a prática de CRUD (Cadastrar, Ler, Atualizar e Deletar) de um sistema de livraria, com NetMaui e C#.</p>
+                    <a href="https://github.com/TataVic/TauBiRy" class="btn btn-primary">Quero Conhecer</a>
                   </div>
                 </div>
               </div>
               <!-- Cards Projetos -->
-                <div class="col"> 
-                  <div class="card " style="width: 18rem;">
+                <div class="col-md-4 d-flex justify-content-center"> 
+                  <div class="card " style="width: 20rem; padding: 10px;">
                     <img src="assets/win-server.jpg" class="card-img-top" alt="GPO Server">
                     <div class="card-body">
                       <h5 class="card-title">GPO: Política de Grupo</h5>
                       <p class="card-text">Criação de 3 GPO no Windows Server 2016: Imagem de área de trabalho e tela de bloqueio, bloqueio de navegadores, bloqueio automático do computador.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="https://github.com/TataVic/GPO" class="btn btn-primary">Quero Conhecer</a>
                     </div>
                   </div>
                 </div>
              </div> <!--Fim dos cards -->
-        </div>
-      </div>     
+      </div> 
+    </section>
       
       <!-- Sobre Mim -->
-      <div class="row">
-        <div class="section">
-          <h5>Sobre Mim</h5>
-        </div>
-      </div>
-  </div>
-</div>
+    <section class="container my-5 section">
+  <h4 class="text-center mb-5" id="Titulo_Section">Minha Trajetória</h4>
 
+  <div class="timeline">
+
+    <!-- Sobre mim -->
+    <div class="timeline-item left">
+      <div class="timeline-content destaque">
+        <img src="assets/fuço.jpeg" class="foto-perfil">
+        <h5>Quem sou eu</h5>
+        <p>
+          Desenvolvedora apaixonada por tecnologia, focada em Back-End,
+          organização de código e construção de sistemas escaláveis.
+        </p>
+      </div>
+    </div>
+
+    <!-- Back-End -->
+    <div class="timeline-item right">
+      <div class="timeline-content-1">
+        <h5>Desenvolvimento Back-End</h5>
+        <p>
+          Experiência com PHP, MVC, MySQL, APIs como Google Maps e Mapbox,
+          autenticação, rotas e geolocalização.
+        </p>
+      </div>
+    </div>
+
+    <!-- Infra -->
+    <div class="timeline-item left">
+      <div class="timeline-content-2">
+        <h5>Infraestrutura e Redes</h5>
+        <p>
+          Windows Server, GPO, controle de usuários, permissões,
+          segurança e organização de ambientes corporativos.
+        </p>
+      </div>
+    </div>
+
+    <!-- Front-End -->
+    <div class="timeline-item right">
+      <div class="timeline-content-3">
+        <h5>Em Desenvolvimento Front-End...</h5>
+        <p>
+          Estudos com Flutter, Bootstrap...
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 </body>
 

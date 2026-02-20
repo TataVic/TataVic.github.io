@@ -12,10 +12,17 @@
 ========================= */
 :root {
   --cor-principal: #fbb03b;
+  --cor-buttons: #fb613b;
   --cor-principal-dark: #ca8f30;
   --cor-box-shadow: #eaff82;
   --cor-branco: #ffffff;
   --cor-preto: #000000;
+  --roxo-principal: #6f42c1;
+  --roxo-medio: #8e5bd9;
+  --roxo-escuro: #5a32a3;
+  --bege-claro: #f5efe6;
+  --bege-quente: #efe4d4;
+  --bege-rosado: #e8d8c3;
 
   --background-image: url('assets/banner.jpg');
 }
@@ -26,14 +33,21 @@ body.dark {
 }
 
 body {
+  color: var(--cor-branco);
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
   background-image: var(--background-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: var(--cor-branco);
-  transition: background 0.3s ease;
+  z-index: -1;
 }
-
 
 /* =========================
    NAVBAR
@@ -67,6 +81,13 @@ body.dark #navbar{
   font-family: "Abril Fatface", serif;
   font-size: x-large;
 }
+
+#Titulo_Section {
+  font-family: "Abril Fatface", serif;
+  font-size: x-large;
+  font-size:xx-large
+}
+
 
 /* =========================
    BANNER
@@ -104,8 +125,8 @@ body.dark #navbar{
   padding: 20px;
   border-radius: 10px;
   opacity: 0.9;
+ 
 }
-
 /* =========================
    BOX BEM-VINDO
 ========================= */
@@ -194,6 +215,12 @@ body.dark .planet-icon {
   width: 50px;
 }
 
+.card-img-top {
+    height: 200px;       
+    object-fit: cover;   
+    width: 100%;
+}
+
 /* =========================
    SWITCH DARK / LIGHT
 ========================= */
@@ -256,6 +283,25 @@ body.dark .planet-icon {
 }
 
 /* =========================
+   Buttons
+========================= */
+
+.btn{
+  background-color: var(--cor-buttons) !important;
+  border-color: var(--cor-buttons) !important;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover{
+  background-color: var(--cor-principal) !important;
+  border-color: var(--cor-principal) !important;
+  transform: translateY(-2px);
+}
+
+/* =========================
    FOOTER
 ========================= */
 .footer{
@@ -291,4 +337,140 @@ body.dark .footer {
 
 body.dark .footer a {
   color: var(--cor-branco);
+}
+
+/*SOBRE MIM*/
+/* Timeline dentro da sua section */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding: 10px 0;
+}
+
+/* Linha central */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background: var(--cor-destaque, #9c27b0);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Itens */
+.timeline-item {
+  padding: 20px 30px;
+  position: relative;
+  width: 50%;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.timeline-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+/* Card */
+.timeline-content{
+  background: var(--cor-branco);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.timeline-content-1{
+  background: linear-gradient(135deg, var(--bege-claro), var(--roxo-principal));
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.timeline-content-2{
+  background: linear-gradient(135deg, var(--bege-quente), var(--roxo-medio));
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.timeline-content-3{
+  background: linear-gradient(135deg, var(--bege-rosado), var(--roxo-escuro));
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.timeline-content h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Bolinha */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: var(--cor-destaque, #9c27b0);
+  border-radius: 50%;
+  top: 30px;
+  right: -8px;
+  z-index: 1;
+}
+
+.timeline-item.right::before {
+  left: -8px;
+}
+
+/* Foto */
+.foto-perfil {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid var(--cor-destaque, #9c27b0);
+}
+
+/* Destaque */
+.destaque {
+  background: linear-gradient(135deg, #6f42c1, #9c27b0);
+  color: white;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+  }
+
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item::before {
+    left: 12px;
+  }
 }
