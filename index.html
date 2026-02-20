@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg" id="navbar">
+<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
   <div class="container-fluid">
 
     <!-- Logo -->
@@ -33,10 +33,9 @@
           <a class="nav-link active" href="#" id="Titulo_Tau">Tauani Vitória</a>
         </li>
       </ul>
-        <a class="nav-link" href="#">Início</a>
-        <a class="nav-link" href="#">Projetos</a>
-        <a class="nav-link" href="#">Sobre mim</a>
-
+        <a class="nav-link" href="#inicio">Início</a>
+        <a class="nav-link" href="#projetos">Projetos</a>
+        <a class="nav-link" href="#sobre">Sobre mim</a>
       <!-- Switch Dark -->
       <div class="theme-switch-wrapper">
         <label class="theme-switch">
@@ -52,7 +51,7 @@
 </nav>
 
 <!-- Banner de Bem Vindo -->
-  <div class="banner-container" id="bannerContainer">
+  <div class="banner-container" id="inicio">
     <div class="container  text-center">
         <div class="row">
           <div class="background-div"></div>
@@ -80,7 +79,7 @@
   </div>
 
 <!-- Banners de Projetos-->
-  <section class="container my-5 section">
+  <section class="container my-5 section" id="projetos">
     <div class="row" style="margin: 50px;">
         <h4 class="text-center mb-5" id="Titulo_Section">Seção Projetos</h4>
           <div class="row">
@@ -89,7 +88,7 @@
               <div class="card" style="width: 20rem; padding: 10px;">
                 <img src="assets/vanpass.png" class="card-img-top" alt="VanPass">
                 <div class="card-body">
-                  <h5 class="card-title">VanPass: Gerenciamento do Transporte Escolar</h5>
+                  <h5 class="card-title" style="font-weight: bold;">VanPass: Gerenciamento do Transporte Escolar</h5>
                   <p class="card-text">Aplicação Web destinada a gerenciar o transporte escolar para o motorista e responsável, com PHP e Javascript.</p>
                   <a href="https://github.com/TataVic/VanPass" class="btn btn-primary">Quero Conhecer</a>
                 </div>
@@ -101,7 +100,7 @@
               <div class="card " style="width: 20rem; padding: 10px;">
                 <img src="assets/taubiry.jpeg" class="card-img-top" alt="TauBiRy">
                 <div class="card-body">
-                  <h5 class="card-title">TauBiRy: Sistema de Livraria</h5>
+                  <h5 class="card-title" style="font-weight: bold;">TauBiRy: Sistema de Livraria</h5>
                   <p class="card-text">Foi utilizado a prática de CRUD (Cadastrar, Ler, Atualizar e Deletar) de um sistema de livraria, com NetMaui e C#.</p>
                   <a href="https://github.com/TataVic/TauBiRy" class="btn btn-primary">Quero Conhecer</a>
                 </div>
@@ -112,7 +111,7 @@
                 <div class="card " style="width: 20rem; padding: 10px;">
                   <img src="assets/win-server.jpg" class="card-img-top" alt="GPO Server">
                   <div class="card-body">
-                    <h5 class="card-title">GPO: Política de Grupo</h5>
+                    <h5 class="card-title" style="font-weight: bold;">GPO: Política de Grupo</h5>
                     <p class="card-text">Criação de 3 GPO no Windows Server 2016: Imagem de área de trabalho e tela de bloqueio, bloqueio de navegadores, bloqueio automático do computador.</p>
                     <a href="https://github.com/TataVic/GPO" class="btn btn-primary">Quero Conhecer</a>
                   </div>
@@ -123,13 +122,13 @@
   </section>
       
 <!-- Sobre Mim -->
-  <section class="container my-5 section">
+  <section class="container my-5 section" id="sobre">
     <h4 class="text-center mb-5" id="Titulo_Section">Minha Trajetória</h4>
     <div class="timeline">
       <div class="timeline-item left">
         <div class="timeline-content destaque">
           <img src="assets/fuço.jpeg" class="foto-perfil">
-          <h5>Quem sou eu</h5>
+          <h5 style="font-weight: bold;">Quem sou eu</h5>
           <p>
             Desenvolvedora apaixonada por tecnologia, focada em Back-End,
             organização de código e construção de sistemas escaláveis, e sempre que possível automatizar.
@@ -140,7 +139,7 @@
       <!-- Back-End -->
       <div class="timeline-item right">
         <div class="timeline-content-1">
-          <h5>Desenvolvimento Back-End</h5>
+          <h5 style="font-weight: bold;">Desenvolvimento Back-End</h5>
           <p>
             Experiência com PHP, MVC, MySQL, APIs como Google Maps e Mapbox,
             autenticação, rotas e geolocalização.
@@ -151,7 +150,7 @@
       <!-- Infra -->
       <div class="timeline-item left">
         <div class="timeline-content-2">
-          <h5>Infraestrutura e Redes</h5>
+          <h5 style="font-weight: bold;">Infraestrutura e Redes</h5>
           <p>
             Windows Server, GPO, Controle de usuários,Permissões,
             Segurança e Organização de ambientes corporativos.
@@ -162,7 +161,7 @@
       <!-- Front-End -->
       <div class="timeline-item right">
         <div class="timeline-content-3">
-          <h5>Em Desenvolvimento...</h5>
+          <h5 style="font-weight: bold;">Em Desenvolvimento...</h5>
           <p>
             Estudos com Flutter, Bootstrap, Python...
           </p>
@@ -170,6 +169,41 @@
       </div>
     </div>
   </section>
+
+
+  <!-- Modal Direitos Reservados -->
+<div class="modal fade" id="direitosModal" tabindex="-1" aria-labelledby="direitosModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="direitosModalLabel">Direitos Autorais</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Todas as imagens utilizadas neste portfólio são de minha autoria e possuem direitos reservados.
+        </p>
+        <p>
+          Os ícones utilizados no site foram fornecidos por 
+          <strong>Freepik</strong> e
+          <strong>Flaticon</strong>.
+        </p>
+        <p>
+          © <span id="Ano"></span> Tauani Vitória. Todos os direitos reservados.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Fechar
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 </body>
 
@@ -179,7 +213,9 @@
    <h4 class="footer-title">Tauani Vitória</h4>
     <p class="footer-subtitle">Desenvolvedora </p>
 
-    <a class="footer-link">Direitos Reservados</a>
+    <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#direitosModal">
+      Direitos Reservados
+    </a>
 
     <p class="copyright">
       © <span id="Ano"></span> - Desenvolvido com amor by Tata Vic❤️.

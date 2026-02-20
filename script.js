@@ -1,6 +1,6 @@
 const toggle = document.getElementById("themeToggle");
 const body = document.body;
-const banner = document.getElementById("bannerContainer");
+const banner = document.getElementById("inicio");
 const planet = document.getElementById("planetIcon");
 
 // Função que aplica o tema
@@ -60,3 +60,13 @@ year.textContent = new Date().getFullYear();
 
   window.addEventListener('scroll', showTimeline);
   showTimeline();
+
+
+  window.addEventListener("scroll", function() {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("shadow");
+  } else {
+    navbar.classList.remove("shadow");
+  }
+});

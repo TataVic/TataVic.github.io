@@ -7,6 +7,10 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* =========================
    VARIÁVEIS DE CORES (SUAS CORES)
 ========================= */
@@ -47,6 +51,10 @@ body::before {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+.modal-content {
+  border-radius: 16px;
 }
 
 /* =========================
